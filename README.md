@@ -8,7 +8,7 @@ The extension utilizes a random forest model algorithm trained to look for 17 ke
 
 ![Image of Extension]
 
-[Click here to check out the extension]dddddd 
+Click here to check out the extension
 (https://chrome.google.com/webstore/detail/phishing-detector/pdchodjkilgkcfnpjpfbfaglbpeemjel?utm_source=chrome-ntp-icon)
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
