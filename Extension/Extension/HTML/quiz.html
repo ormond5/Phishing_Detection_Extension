@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Document</title>
+    <script src="../JS/jquery.js"></script>
+    <link rel="stylesheet" href="../CSS/quiz.css">
+
+</head>
+<body>
+    <div id="main-container">
+        <div class="section-header">
+            <i id="Symbol" class="fa fa-shield"></i>
+            <h1 id="main-title" class="logo">Phishing Detector</h1>
+
+            <!-- This will be a quiz icon -->
+            <i id="apple" class="glyphicon glyphicon-apple"></i>
+            <!-- This will be a Report Icon -->
+            <i id="Report" class="glyphicon glyphicon-list-alt"></i>
+            <!-- Display App's capabilities -->
+            <i id="Fire" class="glyphicon glyphicon-fire"><a href="www.google.com"></a></i>
+
+            <!-- <span class="tooltiptext">Report Phishing website</span> -->
+
+        </div>
+
+        <div class="section-container">
+            <div id="container">
+        
+            <div id="start"><br><br>Start Quiz!</div>
+        
+            <div id="quiz" style="display: none">
+        
+                <div id="question"></div>
+        
+                <div id="qImg"></div>
+        
+                <div id="choices">
+        
+                    <div class="choice" id="A""></div>
+        
+                    <div class="choice" id="B"></div>
+        
+                    <div class="choice" id="C"></div>
+        
+                </div>
+        
+                <div id="timer">
+        
+                    <div id="counter"></div>
+        
+                    <div id="btimeGauge"></div>
+        
+                    <div id="timeGauge"></div>
+        
+                </div>
+                
+        
+                <div id="progress"></div>
+        
+            </div>
+        
+            <div id="scoreContainer" style="display: none"></div>
+        
+            </div>
+            </div>
+
+        <div class="section-bottom">
+        <button style="float: left" id="back"> &#8678; Go Back</button>
+    
+        </div>
+
+    </div>
+
+  
+    <script src="../JS/quiz.js"></script>
+
+</body>
+</html>

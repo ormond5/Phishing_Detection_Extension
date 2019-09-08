@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="../CSS/settings.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/jquery.js"></script>
+    <!-- <link rel="stylesheet" href="../CSS/popup.css"> -->
+    <link rel="stylesheet" href="../CSS/settings.css">
+
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="section-header">
+            <i id="Symbol" class="fa fa-shield"></i>
+            <h1 id="main-title" class="logo">Phishing Detector</h1>
+
+            <!-- This will be a quiz icon -->
+            <i id="apple" class="glyphicon glyphicon-apple"></i>
+            <!-- This will be a Report Icon -->
+            <i id="Report" class="glyphicon glyphicon-list-alt"></i>
+            <!-- Display App's capabilities -->
+            <i id="Fire" class="glyphicon glyphicon-fire"><a href="www.google.com"></a></i>
+
+            <!-- <span class="tooltiptext">Report Phishing website</span> -->
+
+        </div>
+
+        <div class="section-container">
+            <p id="url" style="font-size: 12px;"></p>
+            <!-- <button id="show">Click Me to see Details of this site</button> -->
+            <p id="score"></p>
+            <hr>
+            <p id="explain" style="font-size:12px;"></p>
+            <button id="show">Show Me</button>
+            <!-- <hr> -->
+            <div id='slides1'>
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <p id="ip">Phishing sites sometimes contain IP address in the URL.  </p>
+                    <p id="result1"></p>
+                </div>
+                <div class="mySlides">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <p id="length">Phishing URLs are longer in the hopes to confuse an individual</p>
+                    <p id="result2"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="Tiny">Phishers can shorten their URL is they use a URL shortening service. 
+                    </p>
+                    <p id="result3"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="@symb">>Using “@” symbol in the URL leads the browser
+                    to ignore everything preceding the “@” symbol and the real address
+                    often follows.</p>
+                    <p id="result4"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="//">The presence of '//' in the URL path means that the user
+                        will be redirected to another website. 
+                    </p>
+                    <p id="result5"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="Suff">Phishers tend to add prefixes or suffixes separated by (-)
+                        to the domain name so that users feel that they are dealing with a legitimate webpage</p>
+                    <p id="result6"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="sub-do">Multiple dots in the domain name are a sign of Phishing!</p>
+                    <p id="result7"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="ssl"> I check to see if the website has HTTPS and has a trusted certificate greater than two years.</p>
+                    <p id="result8"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="favicon">Favicon is a icon associated with a specific webpage. If I find that the favicon is
+                    loaded from a domain other than that shown in the address bar,then the webpage is likely to be considered a Phishing attempt.
+                    </p>
+                    <p id="result9"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="port">When computers talk to each other they send information through ports.
+                    When accessing a webpage, there should only be one port number open for communication. 
+                    </p>
+                    <p id="resultA"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="https">The phishers may add the “HTTPS” token to the domain part of a URL in order to trick users.</p>
+                    <p id="resultB"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="request">In legitimate webpages, the webpage address and most of objects embedded within the webpage are sharing the same domain.</p>
+                    <p id="resultC"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="anchor">in HTML code an a tag means that u are redirecting to whatever follows it. </p>
+                    <p id="resultD"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="links">
+                        It is common for legitimate websites to use
+                        'Meta' tags to offer metadata about the HTML document;
+                    </p>
+                    <p id="resultE"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="subemail">A phisher might redirect the user’s information to his personal email</p>
+                    <p id="resultF"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="SFH">The details of this are confusing. Just trust me!</p>
+                    <p id="resultG"></p>
+                </div>
+                <div class="mySlides">
+                    <p id="Iframe">IFrame is an HTML tag used to display an additional webpage into one that is currently shown, usually hidden.</p>
+                    <p id="resultH"></p>
+                </div>
+            </div>
+
+              <div id="buttons">
+               <!-- Next/prev buttons -->
+                <a class="prev" >&#10094;</a>
+                <a class="next">&#10095;</a>
+                </div> 
+            
+            <!-- <Dots/bullets/indicators --> 
+            <div class="dot-container">
+                <span class="dot"  id="one"></span>
+                <span class="dot" id="two" ></span>
+                <span class="dot" id="three"></span>
+                <span class="dot" id="four"></span>
+                <span class="dot" id="five"></span>
+                <span class="dot" id="six"></span>
+                <span class="dot" id="seven"></span>
+                <span class="dot" id="eight"></span>
+                <span class="dot" id="nine"></span>
+                <span class="dot" id="ten"></span>
+                <span class="dot" id="eleven"></span>
+                <span class="dot" id="twelve"></span>
+                <span class="dot" id="thirteen"></span>
+                <span class="dot" id="fourteen"></span>
+                <span class="dot" id="fifthteen"></span>
+                <span class="dot" id="sixteen"></span>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="section-bottom">
+            <button style="float: right" id="back"> &#8678; Go Back</button>
+
+        </div>
+    </div>
+
+    <script src="../JS/settings.js" type="module"></script>
+
+</body>
+
+</html>

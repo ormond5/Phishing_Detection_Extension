@@ -1,0 +1,206 @@
+
+@keyframes AnimatedBackground {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+body{
+  background: linear-gradient(200deg, #ffffff, #4b79cf, #4bc5cf);
+  height: 100%;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  animation: AnimatedBackground 40s ease infinite;
+  font-family: 'Segoe UI Webfront','Segoe UI Light';
+  font-size: 18px;
+}
+
+#title{
+    text-align: center;
+   color: rgb(65,65,67);
+      
+    font-size: 25px;
+    /* line-height: 45px;    */
+    font-weight: 400;
+    margin: 60px;
+}
+.detailmessage{
+   text-align: center;
+    /* color: #fff;  */
+    color: rgb(65,65,67);
+    font-size: 22px;
+    /* line-height: 37px;    */
+    /* font-weight: 400; */
+ 
+}
+
+#url_site{
+  text-align: center;
+  font-size: 15px;
+}
+#buttons_div{
+  margin-left: 20%;
+  
+
+  /* margin: auto; */
+  /* text-align: center; */
+}
+.dropdown{
+  margin-right: 40%;
+}
+
+/* Back to safetey button  */
+.button  {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.829);
+   /* white; */
+  border: none;
+  /* color: #c00;
+   */
+   color: blue;
+  text-align: center;
+  font-size: 12px;
+  
+  padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.button span {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: -0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: white;
+  }
+
+.button:hover{
+  background-color: #4b79cf;
+  /* border-color:black; */
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Learn MOre Button */
+.learn  {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.829);
+  border: none;
+  color: blue;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.6; 
+}
+
+.learn span {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.learn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learn:hover {
+  opacity: 1;
+  background-color: green;
+  color: black;
+}
+
+
+/* Continue on  */
+.Continue  {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.829);
+   /* white; */
+  border: none;
+  /* color: #c00;
+   */
+   opacity: 0.6;
+   color: blue;
+  text-align: center;
+  font-size: 12px;
+  
+ padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.Continue span {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Continue span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.Continue:hover {
+  opacity: 1;
+  background-color: #f44336;
+  color: white;
+}
+
+.footer{
+  height: 100%;
+  text-align: center;
+  font-size: 60px;
+}
+
+.Error{
+   text-align: center;
+    /* color: #fff;  */
+    color: rgb(65,65,67);
+    font-size: 10px; 
+    font-weight: 400;
+    margin-right:30%;
+
+}
+
+.Error:hover{
+  color: black;
+}

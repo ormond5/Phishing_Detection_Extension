@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../CSS/phishinginfopage.css"> -->
+    <!-- 1. BOOTSTRAP v4.0.0         CSS !-->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!-- 2. GOOGLE JQUERY JS v3.2.1  JS !-->
+    <script src="../JS/jquery.js"></script>
+    <!-- 3. BOOTSTRAP v4.0.0         JS !-->
+    <!-- <script src="../JS/bootstrap.min.js"></script> -->
+
+    <title>Learn More</title>
+</head>
+<body>
+    
+    <div class="jumbotron bg-info text-white text-center" style="background: #aaa;">
+        <div class="container">
+        <h1 class="display-4">Phishing 101</h1>
+        <p class="lead">An education tool that will give you everything you need to fight phishing attacks!</p>
+        </div>
+    </div>   
+<!-- Think about what shoudl be first -->
+    <div class="container text-muted">
+        <nav class="nav nav-tabs nav-justified flex-column flex-md-row ">
+            <a class="nav-item nav-link active" href="#Ni-hao" data-toggle="tab">Structure</a>
+            <a class="nav-item nav-link" href="#what" data-toggle="tab">Definition</a>  
+            <a class="nav-item nav-link" href="#example" data-toggle="tab">Phishing Example</a>
+            <a class="nav-item nav-link" href="#how" data-toggle="tab">What to look out for</a>
+            <a class="nav-item nav-link" href="#who" data-toggle="tab">Stats</a>
+            <a class="nav-item nav-link" href="#vid" data-toggle="tab">Videos</a>
+        </nav>
+
+        <div class="tab-content py-5"> 
+            <!-- REF: https://towardsdatascience.com/phishing-domain-detection-with-ml-5be9c99293e5  -->
+            <div class="tab-pane active" id="Ni-hao">
+                <h3>Uniform Resource Locator(URL)</h3>
+                    <p>Every website has a URL. It is a unique identifier used to locate resources on the web(images,sound files, and hypertext pages)<br> 
+                    Displayed below is the structure every URL takes. </p>
+                    <div class="text-center">
+                        <img src="../PNG/url.png" class="img-fluid text-center" alt="url extracted image">
+                    </div>
+                    <li>The Protocol specifies how information from the link is transferred. </li>
+                    <li>The domain name identifies the server who is hosting the web page</li>
+                    <li>The domain name has to be registered with a domain name registrar which cost $$</li>
+                    <li>The Path will usually refer to a file or folder (directory) on the webserver </li>
+            </div>
+
+            <div class="tab-pane" id="what">
+                <h3>Who is doing it and who does it affect? </h3>
+                    <li style="margin-left: 30px">Cyber criminals carry out these attacks on people like you!</li>
+                <h3>What is Phishing?</h3>
+                    <li style="margin-left: 30px">A cybercrime that attempts to trick someone into giving information over the internet or by email. </li>
+                <h3>When does it happen?</h3>
+                <li style="margin-left: 30px">Phishing attacks happen at anytime of the day whenever you are online.This is why you must stay vigiliant. </li>
+                <h3>How does it happen?</h3>
+                    <li style="margin-left: 30px">The art of deception! An attacker will impersonate a person you trust and contact you online. </li>
+                <h3>Why does it happen?</h3>
+                    <li style="margin-left: 30px">This form of cyber attack is the easiest to carry out! 
+                        It is a low risk high reward for the cyber criminal. </li>
+               
+            </div>
+
+            <div class="tab-pane" id="who">
+                <h5>Let's talk some facts</h5>
+                <ul>
+                    <!-- https://www.comparitech.com/blog/vpn-privacy/phishing-statistics-facts/-->
+                    <li>97% of consumers were unable to correctly identify phishing</li>
+                    <li>42% of Targeted attacks were to obtain payment information</li>
+                    <li>A popular anti-phishing system prevented over 482 million attemps to visit fraudelent pages in 2018</li>
+                    <li>Brazil was the most attacked by phishing country </li>
+                    <li>In 2009 the FBI charged more than 100 individuals who were able to pilfer $1.5 miliion from phishing
+                        attacks. </li>
+                    <li>The FTC had to intervene in order to guide World Cup Fans to FIFA.com due to so many email phishing scammers
+                        promising free vacations/rentals and more</li>
+                    <!-- https://www.phishprotection.com/blog/the-top-5-phishing-scams-in-history-what-you-need-to-know/ -->
+                    <li>The average 10,000-employee company spends $3.7 million a year dealing with phishing attacks</li>
+                    <!--| https://www.csoonline.com/article/2975807/phishing-is-a-37-million-annual-cost-for-average-large-company.html-->
+                    <li>The average employee wastes 4.16 hours a year on phishing scams.</li>
+            
+            
+                </ul>
+            </div>
+            <div class="tab-pane" id="example">
+                <h4>Here is an example of a url to Paypal. Can you tell which on is real? </h4>
+                <li>https://www.paypal.com/uk/signin</li>
+                <li>http://paypal--accounts.com</li>
+                <h3>What about these two pictures can you tell which is legitimate? </h3>
+                
+                <br>
+            <div class="text-center">
+                <img src="../PNG/facebook-phish.jpg" height="400" alt="facebook phishing pic"> <p id="results" style="cursor: pointer" ><b>Click Me to find out</b></p>
+                <img src="../PNG/facebook-real.jpg" height="300" alt="facebook phishing pic">
+
+            </div>
+            </div>
+            <div class="tab-pane" id="how">
+                <h5>Be on the look out!</h5>
+                <ul>
+                    <li>Any untrusted source asking for your personal information</li>
+                    <li>Mispelling in Emails,Websites, or URL's.</li>
+                    <li>Be mindful of the time an email was sent to you. Companies will not send out of hours emails asking for important information.</li>
+                    <li>If the URL is extremely long</li>
+                    <li>Hover over links to see the url matches what they say it does</li>
+                    <li>If the 'https:// sign is green! This does not mean its secure just that its private</li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="tab-pane" id="vid">
+                <h5>Take a look at these videos for more understanding </h5> <br>
+                <!-- Phishing? Canada Video-->
+                <div width="350" height="450" style="display: inline" >
+                    <iframe class="embed-responsive-item" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    src="https://www.youtube.com/embed/9TRR6lHviQc"></iframe>
+                </div>
+                <div width="350" height="450" style="display: inline">
+                    <iframe src="https://www.youtube.com/embed/nysiewIXvR8"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div  width="350" height="450" style="display: inline">
+                <iframe src="https://www.youtube.com/embed/ygON2B9-xTw" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div  width="350" height="450" style="display: inline">    
+                <iframe src="https://www.youtube.com/embed/Q2HzEUEhRT0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    <br><br>
+    <hr style="background:black">
+    <h5 class="text-center text-black py-5 display-4">Games</h5>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card" id="Quiz" style="cursor: pointer">
+                    <img src="../PNG/googlequiz.jpg" alt="Phishing Image" class="card-img-top img-fluid">
+                    <div class="card-block">
+                        <h3 class="card-title">Phishing Quiz</h3>
+                        <p>This quiz produced by Google will put your skills to the test!
+                        Have you learned enough to distinguish what is real from what is fake?</p>
+                        <!-- <a href="https://phishingquiz.withgoogle.com/" target="_blank" class="btn btn-primary">Let's Play</a> -->
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6 col-lg-3">
+                <div class="card" id="Quiz1"style="cursor: pointer" >
+                    <img src="../PNG/cisco.jpg" alt="Phishing Image" class="card-img-top img-fluid">
+                    <div class="card-block">
+                        <h3 class="card-title">OpenDNS Quiz</h3>
+                        <p>This quiz shows you 14 different websites, are you able to stay one step ahead of internet scammers and get a perfect score?</p>
+                        <!-- <a href="https://www.opendns.com/phishing-quiz/" target="_blank" class="btn btn-primary">Let's Play</a> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card" id="Quiz2" style="cursor: pointer">
+                    <img src="../PNG/Phishing.png" alt="Phishing Image" class="card-img-top img-fluid">
+                    <div class="card-block">
+                        <h3 class="card-title">Phish-Prone?</h3>
+                        <p>A 10 question quiz that might help change how you approach the internet in the future. </p>
+                        <!-- <a href="https://www.phishing.org/how-phish-prone-are-you" target="_blank" class="btn btn-primary">Let's Play</a> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card" id="Quiz3"style="cursor: pointer">
+                    <!-- <img src="../PNG/G" alt="Phishing Image" class="card-img-top img-fluid"> -->
+                <div style="width:100%;height:0;padding-bottom:69%;position:relative;"><iframe
+                        src="https://giphy.com/embed/hT6wgEtwoUt0no87gV" width="100%" height="100%" style="position:absolute"
+                        allowFullScreen></iframe></div>
+                    <div class="card-block">
+                        <h3 class="card-title">Social engineering</h3>
+                            <p>Try this quiz! It will introduce you to some new terms while showing you some cool gifs! Click me to begin!</p>
+                            <!-- <a href="https://quizizz.com/admin/quiz/581a144d2502e7a91111817" target="_blank" class="btn btn-primary">Let's Play</a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   <br><br>
+
+<footer>
+    <!-- <span style="float: right" class="font-weight-light">D5 </span> -->
+</footer>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/phishinginfopage.js"></script>
+
+</body>
+</html>
+
+

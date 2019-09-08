@@ -1,0 +1,207 @@
+
+@keyframes AnimatedBackground {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+body {
+  height: 100%;
+  width: 330px;
+  font-family:Roboto,sans-serif;
+  font-size: 14px;
+  background: linear-gradient(200deg, #ffffff, #4b79cf, #4bc5cf);
+  background-size: 500% 500%;
+  animation: AnimatedBackground 40s ease infinite;
+  text-align: center;
+  
+}
+#score{
+  cursor: pointer;
+}
+
+#Symbol{
+  font-size: 20px;
+  color: black;
+}
+
+h1 {
+  font-size: 13px;
+  font-weight: 100;
+  padding-left: 3px;
+  margin: 0;
+  color: white;
+}
+
+.logo-img {
+  width: 24px;
+  margin-right: 4px;
+}
+
+#Fire {
+  margin-left: auto;
+  right: -10px;
+  height: 19px;
+  width:30px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  /* Tooltip  */
+  display: inline-block;
+  position: relative; 
+}
+
+#apple{
+  margin-left: auto;
+  right: -48px;
+  height: 20px;
+  width: 25px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+#Report{
+  cursor: pointer;
+  position: absolute;
+  right: 39px;
+  font-size: 18px;
+  color: black;
+  /* height: -15px; */
+  top: 10px;
+
+  
+}
+
+#back{
+  cursor: pointer;
+  background: linear-gradient(200deg, #ffffff, #4b79cf, #4bc5cf);
+  background-size: 500% 500%;
+  animation: AnimatedBackground 40s ease infinite;
+  border: none;
+  /* padding-bottom: 10px; */
+}
+
+#back:active{
+  box-shadow:  0 5px #666;
+  transform: translateY(3px);
+}
+
+.section-header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.section-container {
+  color: #fdfdfd;
+  background-color: rgba(0,0,0,0.06);
+  border-top: 0.4px solid rgba(0,0,0,0.08);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 1.36;
+  font-size: 14px;
+  font-weight: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.section-bottom {
+  color: white;
+  background-color: rgba(0,0,0,0.06);
+  border-top: 0.8px solid rgba(0,0,0,0.08);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+a, a:active, a:visited {
+  color: white;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+#show{
+  color: #4b79cf;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  /* padding: 80px; */
+  text-align: center;
+  top: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%; */
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  top: 170px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  position: absolute;
+  left: 0;
+  top: 170px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  /* background: #ddd; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 3px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
