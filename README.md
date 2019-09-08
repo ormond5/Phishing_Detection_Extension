@@ -1,2 +1,7 @@
 # Phishing_Detection_Extension
-An educational tool that will give you tips on what to look for in a URL and prevent you from phishing attacks.
+
+This is a google chrome extension that I completed for my Dissertation at the University of Essex. 
+
+This extension explores and attempts to answer the question: Does Education Prevent Phishing? 
+
+The extension utilizes a random forest model algorithm trained to look for 17 key features from <link href='https://archive.ics.uci.edu/ml/datasets/phishing+websites'>[1]</link>. 
