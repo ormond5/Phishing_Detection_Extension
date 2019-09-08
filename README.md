@@ -8,9 +8,4 @@ The extension utilizes a random forest model algorithm trained to look for 17 ke
 
 [Check out the extension!](http://chrome.google.com/webstore/detail/phishing-detector/pdchodjkilgkcfnpjpfbfaglbpeemjel?utm_source=chrome-ntp-icon)
 
-![Image of Extension](https://github.com/ormond5/Phishing_Detection_Extension/blob/master/Extension/Extension/Pictures/App0.png)
-
-https://github.com/ormond5/Phishing_Detection_Extension/blob/master/Extension/Extension/Pictures/App0.png
-
-
-https://github.com/ormond5/Phishing_Detection_Extension/blob/master/Extension/Extension/Pictures/App0.png 
+![Image of Extension](https://github.com/ormond5/Phishing_Detection_Extension/blob/master/Extension/Extension/Pictures/App1.PNG)
